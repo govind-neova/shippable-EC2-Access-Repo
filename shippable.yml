@@ -22,7 +22,7 @@ resources:
     type: integration
     integration: "SONAR-SERVER"
 
-#build:
+build:
 
   # http://docs.shippable.com/ci/shippableyml/#ci
   ci:
