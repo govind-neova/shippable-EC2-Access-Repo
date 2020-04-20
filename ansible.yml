@@ -15,4 +15,4 @@
     - include_vars: variables.yml
   tasks:
     - name: Make temp dir
-      shell: "mkdir -p {{ artifact_dest }}"
+      shell: "mkdir -p /tmp/sample"
