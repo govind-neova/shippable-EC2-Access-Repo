@@ -44,6 +44,14 @@ jobs:
           script:
             - ssh -i $(shipctl get_integration_resource_field SONAR-SERVER "Key") centos@54.90.245.228 "mkdir -p /home/centos/sample"
 
+              # Uncomment and replace values with hardcoded values if you deleted the aws_ec2_info resource  
+            #- INST_0_PUBLIC_IP: "54.90.245.228"
+            #- INST_0_ID: "i-07f2045d5e589d362"
+            #- ec2_tag_Type: "t2.micro"
+            #- ec2_tag_Role: "demo_machines"
+            #- ec2_region: "us-east-1"
+
+
 # Integrations are used to connect external resources to CI
 # http://docs.shippable.com/integrations/overview/
 integrations:
