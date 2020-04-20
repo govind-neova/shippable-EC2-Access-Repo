@@ -42,8 +42,8 @@ jobs:
       - TASK:
           name: task
           script:
-            - ssh -i $(shipctl get_integration_resource_field SONAR-SERVER "Key") centos@54.90.245.228 "mkdir -p /home/centos/sample"
-
+            #- ssh -i $(shipctl get_integration_resource_field SONAR-SERVER "Key") centos@54.90.245.228 "mkdir -p /home/centos/sample"
+             - date   
               # Uncomment and replace values with hardcoded values if you deleted the aws_ec2_info resource  
             #- INST_0_PUBLIC_IP: "54.90.245.228"
             #- INST_0_ID: "i-07f2045d5e589d362"
